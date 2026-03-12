@@ -1,0 +1,18 @@
+{
+  "name": "homework3_resolved",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch" : "tailwindcss -i ./main.css -o ./index.css --watch",
+    "build" : "tailwindcss -i ./main.css -o ./index.css"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}
