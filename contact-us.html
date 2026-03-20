@@ -1,58 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="./script.js" defer></script>
-  <link href="./index.css" rel="stylesheet">
-  <title>ABC Toys</title>
-  <meta name="description" content="ABC Toys with great toys for all age groups">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link href="./index.css" rel="stylesheet" />
+    <title>ABC Toys</title>
+    <meta
+      name="description"
+      content="ABC Toys with great toys for all age groups"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<body>
+  <body class="relative bg-gray-300">
+    <div class="flex flex-col h-screen justify-between">
+      <div class="flex flex-col flex-1 mb-20">
+        <div>
+          <div class="relative max-w-6xl mx-auto">
+            <!-- NAVIGATION BAR -->
+            <nav class="flex mx-4 justify-between mt-4 mb-20 md:mx-0">
+              <a href="index.html">ABC Toys</a>
 
-    <div class="relative max-w-6xl mx-auto">
-
-    
-    <!-- nav component -->
-    <nav class="flex mx-4 justify-between my-4 md:mx-0">
-      <a href="index.html">ABC Toys</a>
-
-      <div class="hidden justify-center items-center gap-4 md:flex">
-      <a href="products.html">Products</a>
-      <a href="location.html">Location</a>
-      <a href="contact-us.html">Contact Us</a>
-      <a href="extra.html">Extra</a>
-      </div>
-
-      <!-- hamburger button on small screens -->
-       <div class="md:hidden">
-          <button
-            id="menu-btn"
-            type="button"
-            class="z-40 block hamburger md:hidden focus:outline-none"
-            >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
-       </div>
-    </nav>
-
-    <!-- menu on small screens -->
-        <!-- menu container -->
-        <div id="menu" class="absolute hidden left-6 right-6 top-6 z-40 rounded-lg bg-amber-400">
-
-          <!-- menu content -->
-          <div class="flex flex-col items-center justify-center space-y-6 w-full">
+              <div class="hidden justify-center items-center gap-4 md:flex">
                 <a href="products.html">Products</a>
                 <a href="location.html">Location</a>
                 <a href="contact-us.html">Contact Us</a>
                 <a href="extra.html">Extra</a>
+              </div>
+
+              <!-- hamburger button on small screens -->
+              <div class="md:hidden">
+                <button
+                  id="menu-btn"
+                  type="button"
+                  class="z-40 block hamburger md:hidden focus:outline-none"
+                >
+                  <span class="hamburger-top"></span>
+                  <span class="hamburger-middle"></span>
+                  <span class="hamburger-bottom"></span>
+                </button>
+              </div>
+            </nav>
           </div>
         </div>
 
-    <h1>This is the contact page</h1>
+        <!-- menu on small screens -->
+        <!-- menu container -->
+        <div
+          id="menu"
+          class="absolute hidden left-6 right-6 top-6 z-40 rounded-lg bg-amber-400"
+        >
+          <!-- menu content -->
+          <div
+            class="flex flex-col items-center justify-center space-y-6 w-full"
+          >
+            <a href="products.html">Products</a>
+            <a href="location.html">Location</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="extra.html">Extra</a>
+          </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="flex-1">
+          <main class="max-w-6xl mx-auto h-full">
+            <div
+              class="flex flex-col h-full items-center justify-center bg-gray-100 rounded-2xl md:flex-row"
+            >
+              <!-- company information -->
+              <div class="flex flex-col items-center md:w-1/2">
+                <h1 class="text-3xl font-bold">ABC Toys</h1>
+                <h2 class="text-xl font-thin">Making learning fun</h2>
+
+                <p class="text-lg font-medium">
+                  168 39th Street, Suite 1905CC Brooklyn, NY 11232, USA.
+                </p>
+                <p class="text-lg font-medium">(233)-560-9090</p>
+                <p
+                  class="text-lg font-thin underline text-blue-500 hover:cursor-pointer"
+                >
+                  abctoysinformation@abccompany.com
+                </p>
+              </div>
+              <!-- contact form -->
+              <div
+                class="flex flex-col items-center space-y-4 md:w-1/2 md:me-8"
+              >
+                <h1 class="text-3xl font-semibold">
+                  Contact Us! we want to hear from you!
+                </h1>
+
+                <!-- name row -->
+                <div class="flex w-full justify-between items-center">
+                  <!-- first name -->
+                  <div class="w-full md:w-1/2 md:me-1">
+                    <label
+                      for="first_name"
+                      class="block text-sm font-light mb-0.5"
+                      >First Name</label
+                    >
+                    <input
+                      id="first_name"
+                      name="first_name"
+                      class="w-full px-2 py-3 rounded-sm border"
+                    />
+                  </div>
+                  <!-- last name -->
+                  <div class="w-full md:w-1/2 md:ms-1">
+                    <label
+                      for="last_name"
+                      class="block text-sm font-light mb-0.5"
+                      >Last Name</label
+                    >
+                    <input
+                      id="last_name"
+                      name="last_name"
+                      class="w-full px-2 py-3 rounded-sm border"
+                    />
+                  </div>
+                </div>
+
+                <!-- email -->
+                <div class="w-full">
+                  <label for="email" class="block text-sm font-light mb-0.5"
+                    >Email</label
+                  >
+                  <input
+                    id="email"
+                    name="email"
+                    class="w-full px-2 py-3 border rounded-sm"
+                  />
+                </div>
+
+                <!-- message -->
+                <div class="w-full">
+                  <label for="message" class="block text-sm font-light mb-0.5"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="3"
+                    class="px-2 py-3 rounded-sm border w-full"
+                  ></textarea>
+                </div>
+
+                <!-- send button -->
+                <button
+                  class="w-full px-2 py-3 text-white bg-blue-500 rounded-sm"
+                >
+                  Send message
+                </button>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <footer class="bg-black text-white">
+        <div class="max-w-6xl mx-auto">
+          <p>Something on my footer</p>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
+</html>
