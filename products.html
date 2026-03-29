@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
   <body>
     <div class="flex flex-col min-h-screen justify-between">
       <div>
-        <div class="relative max-w-6xl mx-auto">
+        <div class="relative max-w-6xl mx-auto z-40">
           <!-- nav component -->
           <nav class="flex mx-4 justify-between my-4 md:mx-0">
             <a href="index.html">ABC Toys</a>
@@ -66,20 +66,28 @@
           <!-- hero component -->
           <div class="bg-amber-300 py-10">
             <div class="max-w-6xl mx-auto">
-              <h1>Check out our amazing toy selection!</h1>
-              <h2>
+              <h1 class="text-2xl font-bold text-center md:text-start">
+                Check out our amazing toy selection!
+              </h1>
+              <h2 class="text-xl font-thin text-center md:text-start">
                 Only the best catalog of educational toys for your children!
               </h2>
             </div>
           </div>
 
           <div class="max-w-6xl mx-auto">
-            <h3 class="w-full text-center">These are our top 3 sellers:</h3>
+            <h3
+              class="w-full text-center text-2xl font-light my-12 md:my-8 md:text-start"
+            >
+              These are our top 3 sellers:
+            </h3>
 
-            <div class="flex flex-col md:flex-row md:items-start">
+            <div
+              class="flex flex-col mt-20 space-y-6 mx-10 md:flex-row md:items-start md:space-x-10 md:space-y-0 md:mx-0"
+            >
               <!-- mechanical hand collapsible component -->
               <div
-                class="relative flex flex-col w-full rounded-md bg-blue-200 md:w-1/3"
+                class="relative flex flex-col rounded-md bg-blue-200 md:w-1/3"
               >
                 <input
                   type="checkbox"
@@ -132,7 +140,7 @@
               </div>
               <!-- science kit collapsible component -->
               <div
-                class="relative flex flex-col w-full bg-blue-200 rounded-md md:w-1/3 mt-12"
+                class="relative flex flex-col bg-blue-200 rounded-md md:w-1/3 md:mt-24"
               >
                 <input
                   type="checkbox"
@@ -184,9 +192,9 @@
                   </div>
                 </div>
               </div>
-              <!-- toy collapsible component -->
+              <!-- Solar car collapsible component -->
               <div
-                class="relative flex flex-col w-full rounded-md bg-blue-200 md:w-1/3 mt-24"
+                class="relative flex flex-col rounded-md bg-blue-200 md:w-1/3 md:mt-48"
               >
                 <input
                   type="checkbox"
@@ -240,9 +248,100 @@
         </main>
       </div>
 
-      <footer class="bg-black text-white">
+      <footer class="bg-black text-white py-12 mt-10 md:mt-40">
         <div class="max-w-6xl mx-auto">
-          <p>Something on my footer</p>
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- logo and copyright -->
+            <div
+              class="flex flex-col items-center justify-center md:items-start"
+            >
+              <a
+                href="index.html"
+                class="font-black text-xl underline-offset-2 hover:underline"
+                >ABC Toys</a
+              >
+              <p class="font-thin text-sm mt-2">
+                &copy; 2026 ABC toys. All rights reserved.
+              </p>
+            </div>
+
+            <!-- menu -->
+            <div
+              class="flex flex-col items-center my-8 space-y-2 md:my-0 md:space-y-0 md:space-x-10 md:flex-row"
+            >
+              <div class="flex flex-col items-center space-y-2 md:items-start">
+                <a href="index.html" class="underline-offset-2 hover:underline"
+                  >Home</a
+                >
+                <a
+                  href="products.html"
+                  class="underline-offset-2 hover:underline"
+                  >Products</a
+                >
+                <a
+                  href="contact-us.html"
+                  class="underline-offset-2 hover:underline"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="flex flex-col items-center space-y-2 md:items-start">
+                <a href="extra.html" class="underline-offset-2 hover:underline"
+                  >Extras</a
+                >
+                <a
+                  href="location.html"
+                  class="underline-offset-2 hover:underline"
+                  >Location</a
+                >
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <p>Follow us on our socials:</p>
+              <!-- instagram -->
+              <div class="flex space-x-4 items-center">
+                <div className="h-8">
+                  <a href="#">
+                    <img
+                      src="/local/icon-instagram.svg"
+                      alt="facebook logo"
+                      className="h-6"
+                    />
+                  </a>
+                </div>
+                <!-- facebook -->
+                <div className="h-8">
+                  <a href="#">
+                    <img
+                      src="/local/icon-facebook.svg"
+                      alt="facebook logo"
+                      className="h-6"
+                    />
+                  </a>
+                </div>
+                <!-- pinterest -->
+                <div className="h-8 group">
+                  <a href="#">
+                    <img
+                      src="/local/icon-pinterest.svg"
+                      alt="facebook logo"
+                      className="h-6"
+                    />
+                  </a>
+                </div>
+                <!-- twitter -->
+                <div className="h-8 group">
+                  <a href="#">
+                    <img
+                      src="/local/icon-twitter.svg"
+                      alt="facebook logo"
+                      className="h-6"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

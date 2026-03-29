@@ -1,93 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="./script.js" defer></script>
-  <link href="./index.css" rel="stylesheet">
-  <title>ABC Toys</title>
-  <meta name="description" content="ABC Toys with great toys for all age groups">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link href="./index.css" rel="stylesheet" />
+    <title>ABC Toys</title>
+    <meta
+      name="description"
+      content="ABC Toys with great toys for all age groups"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<body class="relative bg-gray-300">
+  <body class="relative bg-gray-300">
+    <div class="flex flex-col min-h-screen justify-between">
+      <div>
+        <div class="relative max-w-6xl mx-auto">
+          <!-- nav component -->
+          <nav class="flex mx-4 justify-between my-4 md:mx-0">
+            <a href="index.html">ABC Toys</a>
 
-  <div class="flex flex-col min-h-screen justify-between">
+            <div class="hidden justify-center items-center gap-4 md:flex">
+              <a href="products.html">Products</a>
+              <a href="location.html">Location</a>
+              <a href="contact-us.html">Contact Us</a>
+              <a href="extra.html">Extra</a>
+            </div>
 
-    <div>
+            <!-- hamburger button on small screens -->
+            <div class="md:hidden">
+              <button
+                id="menu-btn"
+                type="button"
+                class="z-40 block hamburger md:hidden focus:outline-none"
+              >
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
 
-  <div class="relative max-w-6xl mx-auto">
-
-    <!-- nav component -->
-    <nav class="flex mx-4 justify-between my-4 md:mx-0">
-      <a href="index.html">ABC Toys</a>
-
-      <div class="hidden justify-center items-center gap-4 md:flex">
-      <a href="products.html">Products</a>
-      <a href="location.html">Location</a>
-      <a href="contact-us.html">Contact Us</a>
-      <a href="extra.html">Extra</a>
-      </div>
-
-      <!-- hamburger button on small screens -->
-       <div class="md:hidden">
-          <button
-            id="menu-btn"
-            type="button"
-            class="z-40 block hamburger md:hidden focus:outline-none"
-            >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
-       </div>
-    </nav>
-
-    </div>
-
-     <!-- menu on small screens -->
+        <!-- menu on small screens -->
         <!-- menu container -->
-        <div id="menu" class="absolute hidden left-6 right-6 top-6 z-40 rounded-lg bg-amber-400">
-
+        <div
+          id="menu"
+          class="absolute hidden left-6 right-6 top-6 z-40 rounded-lg bg-amber-400"
+        >
           <!-- menu content -->
-          <div class="flex flex-col items-center justify-center space-y-6 w-full">
-                <a href="products.html">Products</a>
-                <a href="location.html">Location</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="extra.html">Extra</a>
+          <div
+            class="flex flex-col items-center justify-center space-y-6 w-full"
+          >
+            <a href="products.html">Products</a>
+            <a href="location.html">Location</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="extra.html">Extra</a>
           </div>
         </div>
- 
-  <main>
-    <section class="bg-emerald-500 py-10">
-      <div class="flex flex-col max-w-6xl mx-auto items-center md:items-start">
-        <h1 class="text-6xl font-bold">ABC Toys</h1>
-        <h2 class="text-2xl font-extralight">Making learning fun</h2>
+
+        <main>
+          <section class="bg-emerald-500 py-10">
+            <div
+              class="flex flex-col max-w-6xl mx-auto items-center md:items-start"
+            >
+              <h1 class="text-6xl font-bold">ABC Toys</h1>
+              <h2 class="text-2xl font-extralight">Making learning fun</h2>
+            </div>
+          </section>
+
+          <div class="flex flex-col space-y-12 max-w-6xl mx-auto my-16">
+            <p
+              class="text-3xl text-center mx-6 font-medium md:text-5xl md:text-left md:max-w-4xl md:mx-0"
+            >
+              ABC Toys is a company that opened its doors in 2001 and it has
+              kept its mission for all those years.
+            </p>
+            <p
+              class="text-xl text-center mx-6 font-light md:font-medium md:text-3xl md:text-left md:max-w-2xl md:mx-0"
+            >
+              The mission of our company is to create toys that are safe for
+              kindergarten kids but that challenge the kids' mind and motor
+              skills making learning a fun task.
+            </p>
+            <p
+              class="text-xl text-center font-extralight md:font-light md:text-left"
+            >
+              By the way, parents love our toys too
+            </p>
+          </div>
+        </main>
       </div>
-    </section>
 
+      <footer class="bg-black text-white py-12 mt-10 md:mt-40">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- logo and copyright -->
+            <div
+              class="flex flex-col items-center justify-center md:items-start"
+            >
+              <a
+                href="index.html"
+                class="font-black text-xl underline-offset-2 hover:underline"
+                >ABC Toys</a
+              >
+              <p class="font-thin text-sm mt-2">
+                &copy; 2026 ABC toys. All rights reserved.
+              </p>
+            </div>
 
-    <div class="flex flex-col space-y-12 max-w-6xl mx-auto my-16">
-    <p class="text-3xl text-center mx-6 font-medium md:text-5xl md:text-left md:max-w-4xl md:mx-0">ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
-    <p class="text-xl text-center mx-6 font-light md:font-medium md:text-3xl md:text-left md:max-w-2xl md:mx-0">The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
-    <p class="text-xl text-center font-extralight md:font-light md:text-left">By the way, parents love our toys too</p>
+            <!-- menu -->
+            <div
+              class="flex flex-col items-center my-8 space-y-2 md:my-0 md:space-y-0 md:space-x-10 md:flex-row"
+            >
+              <div class="flex flex-col items-center space-y-2 md:items-start">
+                <a href="index.html" class="underline-offset-2 hover:underline"
+                  >Home</a
+                >
+                <a
+                  href="products.html"
+                  class="underline-offset-2 hover:underline"
+                  >Products</a
+                >
+                <a
+                  href="contact-us.html"
+                  class="underline-offset-2 hover:underline"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="flex flex-col items-center space-y-2 md:items-start">
+                <a href="extra.html" class="underline-offset-2 hover:underline"
+                  >Extras</a
+                >
+                <a
+                  href="location.html"
+                  class="underline-offset-2 hover:underline"
+                  >Location</a
+                >
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <p>Follow us on our socials:</p>
+              <!-- instagram -->
+              <div class="flex space-x-4 items-center">
+                <div className="h-8">
+                  <a href="#">
+                    <img
+                      src="/local/icon-instagram.svg"
+                      alt="facebook logo"
+                      className="h-6"
+                    />
+                  </a>
+                </div>
+                <!-- facebook -->
+                <div className="h-8">
+                  <a href="#">
+                    <img
+                      src="/local/icon-facebook.svg"
+                      alt="facebook logo"
+                      className="h-6"
+                    />
+                  </a>
+                </div>
+                <!-- pinterest -->
+                <div className="h-8 group">
+                  <a href="#">
+                    <img
+                      src="/local/icon-pinterest.svg"
+                      alt="facebook logo"
+                      className="h-6"
+                    />
+                  </a>
+                </div>
+                <!-- twitter -->
+                <div className="h-8 group">
+                  <a href="#">
+                    <img
+                      src="/local/icon-twitter.svg"
+                      alt="facebook logo"
+                      className="h-6"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
-  </main>
-
-  </div>
-
-
-  <footer class="bg-black text-white">
-    <div class="max-w-6xl mx-auto">
-      <p>Something on my footer</p>
-    </div>
-  </footer>
-
-   </div>
-
-</body>
-
-  
-
+  </body>
 </html>
