@@ -1,72 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="./script.js" defer></script>
-  <link href="./index.css" rel="stylesheet">
-  <title>ABC Toys</title>
-  <meta name="description" content="ABC Toys with great toys for all age groups">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link href="./index.css" rel="stylesheet" />
+    <title>ABC Toys</title>
+    <meta
+      name="description"
+      content="ABC Toys with great toys for all age groups"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<body>
-
+  <body>
     <div class="flex flex-col min-h-screen justify-between">
       <div>
-    <div class="relative max-w-6xl mx-auto">
+        <!-- color container for navbar -->
+        <div class="sticky z-50 top-0 bg-amber-500 p-4">
+          <div class="relative max-w-6xl mx-auto">
+            <!-- nav component -->
+            <nav class="flex mx-4 justify-between md:mx-0">
+              <a href="index.html">ABC Toys</a>
 
-     <!-- nav component -->
-    <nav class="flex mx-4 justify-between my-4 md:mx-0">
-      <a href="index.html">ABC Toys</a>
-
-      <div class="hidden justify-center items-center gap-4 md:flex">
-      <a href="products.html">Products</a>
-      <a href="location.html">Location</a>
-      <a href="contact-us.html">Contact Us</a>
-      <a href="extra.html">Extra</a>
-      </div>
-
-      <!-- hamburger button on small screens -->
-       <div class="md:hidden">
-          <button
-            id="menu-btn"
-            type="button"
-            class="z-40 block hamburger md:hidden focus:outline-none"
-            >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
-       </div>
-    </nav>
-
-    </div>
-
-    <!-- menu on small screens -->
-        <!-- menu container -->
-        <div id="menu" class="absolute hidden left-6 right-6 top-6 z-40 rounded-lg bg-amber-400">
-
-          <!-- menu content -->
-          <div class="flex flex-col items-center justify-center space-y-6 w-full">
+              <div class="hidden justify-center items-center gap-4 md:flex">
                 <a href="products.html">Products</a>
                 <a href="location.html">Location</a>
                 <a href="contact-us.html">Contact Us</a>
                 <a href="extra.html">Extra</a>
+              </div>
+
+              <!-- hamburger button on small screens -->
+              <div class="md:hidden">
+                <button
+                  id="menu-btn"
+                  type="button"
+                  class="z-40 block hamburger md:hidden focus:outline-none"
+                >
+                  <span class="hamburger-top"></span>
+                  <span class="hamburger-middle"></span>
+                  <span class="hamburger-bottom"></span>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <!-- menu on small screens -->
+        <!-- menu container -->
+        <div
+          id="menu"
+          class="fixed hidden inset-0 bg-black/80 text-white font-black text-lg left-6 right-6 top-12 z-50 rounded-lg"
+        >
+          <!-- menu content -->
+          <div
+            class="flex flex-col items-center justify-center space-y-20 w-full"
+          >
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="location.html">Location</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="extra.html">Extra</a>
           </div>
         </div>
 
         <main class="max-w-6xl mx-auto">
-
           <h1>This is the location page</h1>
-
         </main>
       </div>
 
-          <footer class="bg-black text-white">
-    <div class="max-w-6xl mx-auto">
-      <p>Something on my footer</p>
+      <footer class="bg-black text-white">
+        <div class="max-w-6xl mx-auto">
+          <p>Something on my footer</p>
+        </div>
+      </footer>
     </div>
-  </footer>
-    </div>
-</body>
+  </body>
+</html>
